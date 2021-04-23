@@ -1,0 +1,26 @@
+<head>
+	<title><%= title %></title>
+	<link rel="stylesheet" href="styles.css" />
+	<% if og then %>
+		<%
+			local tags = {}
+			local function gen(tree, kname, vname, path)
+				if tree._k then kname = tree._k end
+				if tree._v then vname = tree._v end
+				for k, v in pairs(tree) do
+					if not k:match '^_' then
+						if type(v) == 'table' then
+							gen(v, kname, vname, path..k..":")
+						else
+							table.insert(tags, {[kname]=path..k, [vname]=v})
+						end
+					end
+				end
+			end
+			gen(og, nil, nil, '')
+		%>
+		<% for _, tag in ipairs(tags) do %>
+			<meta <% for k, v in pairs(tag) do %> <%- k %>="<%= v %>" <% end %> />
+		<% end %>
+	<% end %>
+</head>

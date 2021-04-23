@@ -1,0 +1,16 @@
+{
+  "name": "codinget.me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "csso-cli": "^3.0.0",
+    "html-minifier": "^4.0.0",
+    "less": "^4.1.1"
+  }
+}

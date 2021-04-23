@@ -1,0 +1,10 @@
+/luarocks
+/lua
+/lua_modules
+/.luarocks
+/node_modules
+/package-lock.json
+
+/out/*.css
+/out/*.png
+/out/*.html

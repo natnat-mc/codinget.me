@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+	<%- subtemplate("head", { title=title, og=og }) %>
+	<body>
+		<%- subtemplate("menu", { menu=menu }) %>
+		<main class="card">
+			<img src="avatar.png" />
+			<%- body %>
+		</main>
+	</body>
+</html>

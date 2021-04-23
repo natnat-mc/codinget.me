@@ -1,0 +1,7 @@
+<nav>
+	<% for _, link in pairs(menu) do %>
+		<a href="<%= link.url %>" <% if link.current then %> class="current" <% end %>>
+			<%= link.text %>
+		</a>
+	<% end %>
+</nav>

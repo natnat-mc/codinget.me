@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+	<%- subtemplate("head", { title=title, og=og }) %>
+	<body>
+		<%- subtemplate("menu", { menu=menu }) %>
+		<main class="sub">
+			<%- body %>
+		</main>
+	</body>
+</html>

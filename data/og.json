@@ -1,0 +1,19 @@
+{
+	"_v": "content",
+	"og": {
+		"_k": "property",
+		"title": "Codinget's frontpage",
+		"description": "Catgirl {dev,{sys,net}admin}",
+		"url": "https://codinget.me",
+		"image": "https://codinget.me/avatar.png",
+		"type": "profile",
+		"profile": {
+			"username": "Codinget"
+		}
+	},
+	"twitter": {
+		"_k": "name",
+		"card": "summary",
+		"creator": "@codinget"
+	}
+}

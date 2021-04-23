@@ -1,0 +1,30 @@
+[
+	{
+		"title": "Codinget",
+		"html": "index",
+		"md": "main",
+		"template": "main",
+		"og": true
+	},
+	{
+		"title": "About me",
+		"html": "about",
+		"md": "about",
+		"template": "sub",
+		"og": false
+	},
+	{
+		"title": "My projects",
+		"html": "projects",
+		"md": "projects",
+		"template": "sub",
+		"og": false
+	},
+	{
+		"title": "Contact me",
+		"html": "contact",
+		"md": "contact",
+		"template": "sub",
+		"og": false
+	}
+]
