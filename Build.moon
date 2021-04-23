@@ -44,7 +44,7 @@ with public target "clean"
 	\fn =>
 		_.cmd RM, ["out/#{page.html}.html" for page in *PAGES]
 		_.cmd RM, "out/styles.css"
-		_.cmd RM, "out/avatar.png", "out/bg.png"
+		_.cmd RM, "out/avatar.png", "out/bg.png", "out/favicon.png", "out/favicon.ico"
 
 with public target "css"
 	\produces "out/styles.css"
@@ -57,6 +57,7 @@ with public target "css"
 with public target "assets"
 	\after "out/avatar.png"
 	\after "out/bg.png"
+	\after "out/favicon.png", "out/favicon.ico"
 
 -- actual targets
 for page in *PAGES
@@ -90,3 +91,12 @@ with target "out/bg.png"
 	\produces "%"
 	\depends _.wildcard "data/bg.*"
 	\fn => _.cmd CONVERT, @infile, '-resize', '1920x1080', @outfile
+
+with target "out/favicon.png"
+	\produces "%"
+	\depends _.wildcard "data/avatar.*"
+	\fn => _.cmd CONVERT, @infile, '-resize', '64x64', @outfile
+with target "out/favicon.ico"
+	\produces "%"
+	\depends _.wildcard "data/avatar.*"
+	\fn => _.cmd CONVERT, @infile, '-resize', '64x64', @outfile
