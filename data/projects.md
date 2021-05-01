@@ -7,9 +7,10 @@ A small general-purpose build system written in moonscript that aims to be simpl
 
 ## Rmarcher
 
-* <https://github.com/natnat-mc/moonbuild>
+* <https://github.com/natnat-mc/rmarcher>
 
-A simple ray marching renderer written in Rust, supporting both global and punctual illumination
+A simple ray marching renderer written in Rust, supporting both global and punctual illumination  
+The background on this website was rendered with this
 
 ## Container
 
